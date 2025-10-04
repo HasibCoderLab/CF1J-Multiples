@@ -12,7 +12,12 @@ int main()
 {
     long long A, B;
     cin >> A >> B;
-    string result = B / A ? "Multiples " : "No Multiples";
-       cout<< result;
+    if (A%B == 0 || B%A == 0)
+    {
+        cout<< "Multiples";
+    }else{
+         cout<< "No Multiples" ;
+    }
+    
     return 0;
 }
